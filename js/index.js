@@ -28,13 +28,13 @@ window.addEventListener('load', () => {
         }, 4000);
     })
 
-    popupBtn.addEventListener('click', () => {
-        popup.classList.remove('popup__show');
-        popupWindow1.classList.remove('popup__window_show');
-        gameWheel.classList.add('game__hidden');
-        gameCards.classList.remove('game__hidden');
-        localStorage.gameCards = '6009_game2_start'
-    })
+    // popupBtn.addEventListener('click', () => {
+    //     popup.classList.remove('popup__show');
+    //     popupWindow1.classList.remove('popup__window_show');
+    //     gameWheel.classList.add('game__hidden');
+    //     gameCards.classList.remove('game__hidden');
+    //     localStorage.gameCards = '6009_game2_start'
+    // })
 
     let counter = 0;
 

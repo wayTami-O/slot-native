@@ -40,8 +40,47 @@
 <body>
     <div class="wrapper">
         <div class="container">
+            <!-- <div class="lang_switcher_outer">
+            <div class="lang_switcher">
+                <p>
+                    <span class="en">Language</span>
+                    <span class="de">Sprache</span>
+                    <span class="pl">Język</span>
+                </p>
+                <div class="curr_lang">
+                    <svg class="lang_flag">
+                        <use xlink:href="img/flags.svg#flag_en"></use>
+                    </svg>
+                    <span>en</span></div>
+                <i class="lang_arr"></i>
+            </div>
+            <ul class="lang_list">
+                <li class="lang_list_item curr" data-lang="en">
+                    <svg class="lang_flag">
+                        <use xlink:href="img/flags.svg#flag_en"></use>
+                    </svg>
+                    <span>en</span>
+                </li>
+
+
+                <li class="lang_list_item" data-lang="de">
+                    <svg class="lang_flag">
+                        <use xlink:href="img/flags.svg#flag_de"></use>
+                    </svg>
+                    <span>de</span>
+                </li>
+
+                <li class="lang_list_item" data-lang="pl">
+                    <svg class="lang_flag">
+                        <use xlink:href="img/flags.svg#flag_pl"></use>
+                    </svg>
+                    <span>pl</span>
+                </li>
+            </ul>
+        </div> -->
             <a class="logo" href="#">
-                <img src="img/Nine-logo.png" alt="">
+                <!-- <img src="img/Nine-logo.png" alt=""> -->
+                <img src="./img/BlazeBet-Logotype-Big-Light.png" alt=""> 
             </a>
             <div class="bonuses bonuses__hidden bonuses__page" id="bonuses-page">
                 <div class="bonus">
@@ -96,7 +135,8 @@
                     <div class="wheel__around"></div>
                     <div class="wheel__arrow"></div>
                     <div class="wheel__bottom"></div>
-                    <img src="./img/newWheel.png" alt="" class="wheel__spinner wheel__spinner_animated">
+                    <img class="wheel__spinner wheel__spinner_animated" id="wheel__spinner" data-path="img"
+                        src="img/wheel-en.png">
                     <div class="wheel__button" id="wheel__button">
                         <span class="en">GIRAR</span>
                         <span class="de">DREH</span>

@@ -588,7 +588,7 @@ html .no {
     background-size: 100% 100%;
     position: absolute;
     pointer-events: none;
-    left: -10.2em;
+    left: -9.75em;
     top: -8%;
     width: 58.1em;
     height: 59.1em;
@@ -627,9 +627,10 @@ html .no {
     background: #ff8c02;
     background: radial-gradient(circle, #ff8c02 0%, #f74701 100%);
     position: absolute;
-    left: 50%;
+    /* left: 50%; */
+    left: 17.5em;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
     z-index: 5;
     border: none;
     outline: none;
@@ -693,13 +694,13 @@ html .no {
         transform: rotate(-40deg)
     }
     70% {
-        transform: rotate(724deg)
+        transform: rotate(614deg)
     }
     80% {
-        transform: rotate(716deg)
+        transform: rotate(606deg)
     }
     100% {
-        transform: rotate(720deg)
+        transform: rotate(610deg)
     }
 }
 
