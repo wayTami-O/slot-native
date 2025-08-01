@@ -577,8 +577,8 @@ html .no {
 }
 
 .wheel__spinner {
-    width: 44.3em;
-    height: 44.3em;
+    width: 43.3em;
+    height: 43.3em;
     position: relative;
     z-index: 2
 }
@@ -588,7 +588,7 @@ html .no {
     background-size: 100% 100%;
     position: absolute;
     pointer-events: none;
-    left: -9.75em;
+    left: -10.2em;
     top: -8%;
     width: 58.1em;
     height: 59.1em;
@@ -627,10 +627,10 @@ html .no {
     background: #ff8c02;
     background: radial-gradient(circle, #ff8c02 0%, #f74701 100%);
     position: absolute;
-    /* left: 50%; */
-    left: 17.5em;
+    left: 50%;
+    /* left: 17.5em; */
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 5;
     border: none;
     outline: none;
