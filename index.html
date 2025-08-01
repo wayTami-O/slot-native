@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+        name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Nine Casino</title>
+    <link href="img/Nine-logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script async="" src="../static/fbevents.js"></script>
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        var queryParams = new URLSearchParams(window.location.search);
+        var customParam = queryParams.get('pixel');
+        fbq('init', customParam);
+        fbq('trackCustom', 'Install');
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <a class="logo" href="#">
+                <img src="img/Nine-logo.png" alt="">
+            </a>
+            <div class="bonuses bonuses__hidden bonuses__page" id="bonuses-page">
+                <div class="bonus">
+                    <div class="bonus__title">
+                        <div class="bonus__title_icon bonus__title_respin">
+                            <img src="img/respin.svg" alt="">
+                        </div>
+                        <div class="bonus__title_text">
+                            <span class="en">FS:</span>
+                            <span class="de">FS:</span>
+                            <span class="pl">FS:</span>
+                        </div>
+                    </div>
+                    <div class="bonus__sum">
+                        <span>250</span>
+                    </div>
+
+                </div>
+                <div class="bonus bonus__hidden" id="bonus-2">
+                    <div class="bonus__title">
+                        <div class="bonus__title_icon bonus__title_money">
+                            <img src="img/money.svg" alt="">
+                        </div>
+                        <div class="bonus__title_text">
+                            <span class="en">€:</span>
+                            <span class="pl">€:</span>
+                            <span class="de">€:</span>
+                        </div>
+                    </div>
+                    <div class="bonus__sum">
+                        <span class="en">450</span>
+                        <span class="pl">450</span>
+                        <span class="de">450</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="game " id="game__wheel">
+                <div class="title">
+                    <div class="title__additional">
+                        <span class="en">girar la rueda y</span>
+                        <span class="de">DREHEN SIE DAS RAD UND ERHALTEN</span>
+                        <span class="pl">ZAKRĘĆ KOŁEM I ODBIERZ </span>
+                    </div>
+                    <div class="title__main title__main_first">
+                        <span class="en">obtener bonus</span>
+                        <span class="de"> SIE FREISPIELE</span>
+                        <span class="pl"> DARMOWE OBROTY</span>
+                    </div>
+                </div>
+                <div class="wheel">
+                    <div class="wheel__around"></div>
+                    <div class="wheel__arrow"></div>
+                    <div class="wheel__bottom"></div>
+                    <img src="./img/newWheel.png" alt="" class="wheel__spinner wheel__spinner_animated">
+                    <div class="wheel__button" id="wheel__button">
+                        <span class="en">GIRAR</span>
+                        <span class="de">DREH</span>
+                        <span class="pl">ZAKRĘĆ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game game__hidden" id="game__cards">
+                <div class="title title__second">
+                    <div class="title__additional">
+                        <span class="en">RAYAR LAS CARTAS</span>
+                        <span class="de">RUBBELN SIE DIE LOSE UND ERHALTEN</span>
+                        <span class="pl">ZDRAP KARTY I</span>
+                    </div>
+                    <div class="title__main">
+                        <span class="en"> Y OBTENER SU BONO </span>
+                        <span class="de"> SIE IHREN BONUS</span>
+                        <span class="pl">ODBIERZ BONUSY</span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card" data-attr="card1">
+                        <div class="card__normal">
+                            <img src="img/card.png" alt="">
+                        </div>
+                        <div class="card__final">
+                            <img src="img/card__win.png" alt="">
+                        </div>
+                        <div class="card__sum">
+                            <img class="en" src="img/euro.jpg" alt="">
+                            <img class="de" src="img/euro.jpg" alt="">
+                            <img class="pl" src="img/pln.jpg" alt="">
+                        </div>
+                        <div class="card__bonus">
+                            <img class="en" src="img/x5.png" alt="">
+                            <img class="de" src="img/x5.png" alt="">
+                            <img class="pl" src="img/x5.png" alt="">
+                        </div>
+                        <img class="card__action" src="img/card-animation.gif" alt="">
+                    </div>
+                    <div class="card" data-attr="card2">
+                        <div class="card__normal">
+                            <img src="img/card.png" alt="">
+                        </div>
+                        <div class="card__final">
+                            <img src="img/card__win.png" alt="">
+                        </div>
+                        <div class="card__sum">
+                            <img class="en" src="img/euro.jpg" alt="">
+                            <img class="de" src="img/euro.jpg" alt="">
+                            <img class="pl" src="img/pln.jpg" alt="">
+                        </div>
+                        <div class="card__bonus">
+                            <img class="en" src="img/x5.png" alt="">
+                            <img class="de" src="img/x5.png" alt="">
+                            <img class="pl" src="img/x5.png" alt="">
+                        </div>
+                        <img class="card__action" src="img/card-animation.gif" alt="">
+                    </div>
+                    <div class="card" data-attr="card3">
+                        <div class="card__normal">
+                            <img src="img/card.png" alt="">
+                        </div>
+                        <div class="card__final">
+                            <img src="img/card__win.png" alt="">
+                        </div>
+                        <div class="card__sum">
+                            <img class="en" src="img/euro.jpg" alt="">
+                            <img class="de" src="img/euro.jpg" alt="">
+                            <img class="pl" src="img/pln.jpg" alt="">
+                        </div>
+                        <div class="card__bonus">
+                            <img class="en" src="img/x5.png" alt="">
+                            <img class="de" src="img/x5.png" alt="">
+                            <img class="pl" src="img/x5.png" alt="">
+                        </div>
+                        <img class="card__action" src="img/card-animation.gif" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup__window" id="popup__window_1">
+                <div class="popup__element popup__element_heart">
+                    <img src="img/popup-heart.png" alt="">
+                </div>
+                <div class="popup__element popup__element_money">
+                    <img src="img/popup-money.png" alt="">
+                </div>
+                <div class="popup__element popup__element_cube">
+                    <img src="img/popup-cube.png" alt="">
+                </div>
+                <div class="popup__content">
+                    <div class="popup__title">
+                        <span class="en">ganaste</span>
+                        <span class="de">SIE HABEN</span>
+                        <span class="pl">TWOJA WYGRANA TO</span>
+                    </div>
+                    <div class="popup__win popup__win_first">
+                        <span class="en">+250FS</span>
+                        <span class="de">220 FREISPIELE GEWONNEN</span>
+                        <span class="pl">220 DARMOWYCH OBROTÓW</span>
+                    </div>
+                    <div class="popup__img">
+                        <img src="img/candy.png" alt="">
+                    </div>
+                    <button class="popup__button" id="popup__button">
+                        <span class="en">CONTINUAR</span>
+                        <span class="de">FORTFAHREN</span>
+                        <span class="pl">KONTYNUUJ</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="popup__window" id="popup__window_2">
+                <div class="popup__element popup__element_heart">
+                    <img src="img/popup-heart.png" alt="">
+                </div>
+                <div class="popup__element popup__element_money">
+                    <img src="img/popup-money.png" alt="">
+                </div>
+                <div class="popup__element popup__element_cube">
+                    <img src="img/popup-cube.png" alt="">
+                </div>
+                <div class="popup__content">
+                    <div class="popup__title popup__title_final">
+                        <span class="en">recoger su<br>bono de bienvenida </span>
+                        <span class="de">HOLEN SIE SICH<br> IHREN BONUS</span>
+                        <span class="pl">ODBIERZ SWÓJ<br> BONUS POWITALNY</span>
+                    </div>
+                    <div class="popup__win popup__win_final">
+                        <span class="en">450 € + 250 giros gratis</span>
+                        <span class="de">1.200 € + 220 FREISPIELE</span>
+                        <span class="pl">5000ZŁ + 220 <span class="fs">DARMOWYCH OBROTÓW</span> </span>
+                    </div>
+                    <div class="bonuses  popup__bonuses">
+                        <div class="bonus">
+                            <div class="bonus__title">
+                                <div class="bonus__title_icon bonus__title_respin">
+                                    <img src="img/respin.svg" alt="">
+                                </div>
+                                <div class="bonus__title_text">
+                                    <span class="en">FS:</span>
+                                    <span class="de">FS:</span>
+                                    <span class="pl">FS:</span>
+                                </div>
+                            </div>
+                            <div class="bonus__sum">
+                                <span>250</span>
+                            </div>
+
+                        </div>
+                        <div class="bonus">
+                            <div class="bonus__title">
+                                <div class="bonus__title_icon bonus__title_money">
+                                    <img src="img/money.svg" alt="">
+                                </div>
+                                <div class="bonus__title_text">
+                                    <span class="en">€:</span>
+                                    <span class="pl">€:</span>
+                                    <span class="de">€:</span>
+                                </div>
+                            </div>
+                            <div class="bonus__sum">
+                                <span class="en">450</span>
+                                <span class="pl">450</span>
+                                <span class="de">450</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a id="url_refff" href="{offer}" class="popup__button popup__button_final">
+                        <span class="en">Reclamar Bono</span>
+                        <span class="de">BONUS BEANSPRUCHEN</span>
+                        <span class="pl">ODBIERZ BONUS</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="shared/js/jquery-3.6.0.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/app.js"></script>
+
+</html>
