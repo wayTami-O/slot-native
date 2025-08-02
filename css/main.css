@@ -1153,6 +1153,12 @@ html .no {
     }
 }
 
+@media (min-width: 1680px) {
+    html {
+        font-size: 0.469vw
+    }
+}
+
 @media (max-width: 1680px) {
     html {
         font-size: 9px
