@@ -577,8 +577,8 @@ html .no {
 }
 
 .wheel__spinner {
-    width: 43.3em;
-    height: 43.3em;
+    width: 45.3em;
+    height: 45.3em;
     position: relative;
     z-index: 2
 }
@@ -588,7 +588,7 @@ html .no {
     background-size: 100% 100%;
     position: absolute;
     pointer-events: none;
-    left: -10.2em;
+    left: -9.75em;
     top: -8%;
     width: 58.1em;
     height: 59.1em;
@@ -627,10 +627,10 @@ html .no {
     background: #ff8c02;
     background: radial-gradient(circle, #ff8c02 0%, #f74701 100%);
     position: absolute;
-    left: 50%;
-    /* left: 17.5em; */
+    /* left: 50%; */
+    left: 17.5em;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
     z-index: 5;
     border: none;
     outline: none;
@@ -764,6 +764,25 @@ html .no {
     width: 61.7em;
     padding: 8em 4em 4em;
     display: none
+}
+
+.popup__window_2 {
+    position: absolute;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    left: 8rem;
+    top: 34rem;
+    background: url("../img/popup-window.png") 50% 50%;
+    background-size: 100% 100%;
+    width: 51.7em;
+    height: 40rem;
+    padding: 8em 4em 4em;
+}
+
+.popup__content_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .popup__window_show {
@@ -1150,6 +1169,9 @@ html .no {
     html {
         font-size: 7.75px
     }
+    .popup__window_2 {
+        left: 6rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1160,6 +1182,12 @@ html .no {
     .bonuses__page {
         font-size: 90%;
         transform: translateX(0%)
+    }
+
+    .popup__window_2 {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 85rem;
     }
 }
 
@@ -1294,6 +1322,9 @@ html .no {
 
     .popup__window {
         top: 17rem
+    }
+    .popup__window_2 {
+        top: 95rem;
     }
 }
 
