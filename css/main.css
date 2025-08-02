@@ -184,13 +184,23 @@ html {
     font-size: 10px
 }
 
-.wrapper {
+/* .wrapper {
     background: url("../img/bg.jpg") 50% 0% no-repeat no-repeat;
     max-width: 192rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     background-size: cover
+} */
+
+.wrapper {
+    background: url("../img/bg.jpg") 50% 0% no-repeat no-repeat;
+    /* max-width: 192rem; */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    height: 100dvh;
 }
 
 .container {
