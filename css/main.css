@@ -206,7 +206,7 @@ html {
 .container {
     max-width: 134rem;
     margin: 0 auto;
-    padding: 4rem 2rem 2rem;
+    padding: 2rem 2rem 2rem;
     position: relative
 }
 
@@ -1264,7 +1264,8 @@ html .no {
     }
 
     .logo {
-        max-width: 27rem
+        max-width: 27rem;
+        margin-bottom: 1rem;
     }
 
     .cards {
@@ -1274,7 +1275,8 @@ html .no {
     }
 
     .title {
-        margin-bottom: 9rem
+        /* margin-bottom: 9rem */
+        margin-bottom: 4rem;
     }
 
     .title__second {
@@ -1340,7 +1342,7 @@ html .no {
         top: 17rem
     }
     .popup__window_2 {
-        top: 87.5rem;
+        top: 85rem;
         z-index: 5;
         padding-block: 5rem 3rem;
         height: fit-content;
