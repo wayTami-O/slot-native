@@ -704,13 +704,13 @@ html .no {
         transform: rotate(-40deg)
     }
     70% {
-        transform: rotate(614deg)
+        transform: rotate(654deg)
     }
     80% {
-        transform: rotate(606deg)
+        transform: rotate(646deg)
     }
     100% {
-        transform: rotate(610deg)
+        transform: rotate(650deg)
     }
 }
 
@@ -1340,7 +1340,8 @@ html .no {
         top: 17rem
     }
     .popup__window_2 {
-        top: 95rem;
+        top: 87.5rem;
+        z-index: 5;
     }
 }
 
