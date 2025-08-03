@@ -134,7 +134,7 @@ window.addEventListener('load', () => {
     });
 
 
-    wheelSpinner.src = imgPath + "/wheel-" + lang + ".png";
+    // wheelSpinner.src = imgPath + "/wheel-" + lang + ".png";
 
     $langListItem.click(function () {
         $preloader.fadeIn();
@@ -154,7 +154,7 @@ window.addEventListener('load', () => {
             .siblings()
             .removeClass('curr');
         $currLang.html($(this).html());
-        wheelSpinner.src = imgPath + "/wheel-" + lang + ".png";
+        // wheelSpinner.src = imgPath + "/wheel-" + lang + ".png";
     });
 
     $(document).mouseup(function (e) {

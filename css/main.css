@@ -185,7 +185,7 @@ html {
 }
 
 /* .wrapper {
-    background: url("../img/bg.jpg") 50% 0% no-repeat no-repeat;
+    background: url("../img/bg.webp") 50% 0% no-repeat no-repeat;
     max-width: 192rem;
     margin: 0 auto;
     overflow: hidden;
@@ -194,7 +194,7 @@ html {
 } */
 
 .wrapper {
-    background: url("../img/bg.jpg") 50% 0% no-repeat no-repeat;
+    background: url("../img/bg.webp") 50% 0% no-repeat no-repeat;
     /* max-width: 192rem; */
     margin: 0 auto;
     overflow: hidden;
@@ -594,7 +594,7 @@ html .no {
 }
 
 .wheel__around {
-    background: url("../img/wheel-around.png") 50% 50%;
+    background: url("../img/wheel-around.webp") 50% 50%;
     background-size: 100% 100%;
     position: absolute;
     pointer-events: none;
@@ -769,7 +769,7 @@ html .no {
     left: 50%;
     transform: translateX(-50%);
     top: 14rem;
-    background: url("../img/popup-window.png") 50% 50%;
+    background: url("../img/popup-window.webp") 50% 50%;
     background-size: 100% 100%;
     width: 61.7em;
     padding: 8em 4em 4em;
@@ -782,7 +782,7 @@ html .no {
     transform: translateX(-50%); */
     left: 8rem;
     top: 34rem;
-    background: url("../img/popup-window.png") 50% 50%;
+    background: url("../img/popup-window.webp") 50% 50%;
     background-size: 100% 100%;
     width: 51.7em;
     height: 40rem;
