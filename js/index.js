@@ -1,6 +1,5 @@
 window.addEventListener('load', () => {
 
-
     const wheelBtn = document.getElementById('wheel__button');
     const wheelSpinner = document.getElementById('wheel__spinner');
     const popup = document.getElementById('popup');
@@ -14,6 +13,10 @@ window.addEventListener('load', () => {
     const bonusFinal = document.getElementById('bonus-2');
     const imgPath = wheelSpinner.getAttribute('data-path');
 
+    const priceText = document.getElementById('price-text')
+    const surpriceText = document.getElementById('surprice-text')
+
+
     // Счетчик прокруток колеса
     let spinCount = 0;
     const maxSpins = 2;
@@ -26,12 +29,24 @@ window.addEventListener('load', () => {
             // Первая прокрутка - 860 градусов
             wheelSpinner.classList.add('wheel__spinner_first_spin');
             
+            priceText.innerHTML = `+0FS`
+            surpriceText.innerHTML = `RÉESSAIE`
+            popupBtn.innerHTML = `<span class="en">TOURNE ENCORE</span>`
+
             setTimeout(function () {
                 localStorage.firstSpin = '6009_first_spin';
                 wheelBtn.disabled = false;
                 wheelBtn.querySelector('.en').textContent = 'TOURNER ENCORE'
-                // wheelBtn.textContent = 'TOURNER ENCORE';
+            
+                popup.classList.add('popup__show');
+                popupWindow1.classList.add('popup__window_show');
             }, 4000);
+
+            popupBtn.onclick = () => {
+                popup.classList.remove('popup__show');
+                popupWindow1.classList.remove('popup__window_show');
+            }
+
         } else if (spinCount === 2) {
             // Вторая прокрутка - использует CSS keyframe
             // Сбрасываем позицию колеса для корректной работы CSS анимации
@@ -39,10 +54,17 @@ window.addEventListener('load', () => {
             wheelSpinner.classList.remove('wheel__spinner_first_spin');
             wheelSpinner.classList.remove('wheel__spinner_animated');
             
+            surpriceText.innerHTML = `Tu as presque gagné... fais ton dépôt maintenant pour débloquer ton cadeau!`
+            priceText.innerHTML = `+300 FS`
+            popupBtn.innerHTML = `<span class="en">UTILISER LE PRIX</span>`
+            
+            popupBtn.onclick = () => {
+                window.location.replace('https://blazebet777.com/signUp?v1=fbintv_8&v2={subid}&v4=bonanza')
+            }
             // Небольшая задержка для применения сброса позиции
             setTimeout(() => {
                 wheelSpinner.classList.add('wheel__spinner_win');
-            }, 50);
+            }, 5);
             
             setTimeout(function () {
                 localStorage.spin = '6009_spin';
@@ -53,13 +75,6 @@ window.addEventListener('load', () => {
         }
     })
 
-    // popupBtn.addEventListener('click', () => {
-    //     popup.classList.remove('popup__show');
-    //     popupWindow1.classList.remove('popup__window_show');
-    //     gameWheel.classList.add('game__hidden');
-    //     gameCards.classList.remove('game__hidden');
-    //     localStorage.gameCards = '6009_game2_start'
-    // })
 
     let counter = 0;
 

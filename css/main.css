@@ -714,6 +714,9 @@ html .no {
     }
 }
 
+
+
+
 @keyframes spinFirst {
     0% {
         transform: rotate(-40deg)
