@@ -14,18 +14,42 @@ window.addEventListener('load', () => {
     const bonusFinal = document.getElementById('bonus-2');
     const imgPath = wheelSpinner.getAttribute('data-path');
 
+    // Счетчик прокруток колеса
+    let spinCount = 0;
+    const maxSpins = 2;
 
     wheelBtn.addEventListener('click', () => {
         wheelBtn.disabled = true;
-        wheelSpinner.classList.remove('wheel__spinner_animated');
-        wheelSpinner.classList.add('wheel__spinner_win');
-        setTimeout(function () {
-            localStorage.spin = '6009_spin';
-            popup.classList.add('popup__show');
-            popupWindow1.classList.add('popup__window_show');
-            bonusesPage.classList.remove('bonuses__hidden');
-
-        }, 4000);
+        spinCount++;
+        
+        if (spinCount === 1) {
+            // Первая прокрутка - 860 градусов
+            wheelSpinner.classList.add('wheel__spinner_first_spin');
+            
+            setTimeout(function () {
+                localStorage.firstSpin = '6009_first_spin';
+                wheelBtn.disabled = false;
+                wheelBtn.textContent = 'TOURNER ENCORE';
+            }, 4000);
+        } else if (spinCount === 2) {
+            // Вторая прокрутка - использует CSS keyframe
+            // Сбрасываем позицию колеса для корректной работы CSS анимации
+            wheelSpinner.style.transform = 'rotate(-40deg)';
+            wheelSpinner.classList.remove('wheel__spinner_first_spin');
+            wheelSpinner.classList.remove('wheel__spinner_animated');
+            
+            // Небольшая задержка для применения сброса позиции
+            setTimeout(() => {
+                wheelSpinner.classList.add('wheel__spinner_win');
+            }, 50);
+            
+            setTimeout(function () {
+                localStorage.spin = '6009_spin';
+                popup.classList.add('popup__show');
+                popupWindow1.classList.add('popup__window_show');
+                bonusesPage.classList.remove('bonuses__hidden');
+            }, 4000);
+        }
     })
 
     // popupBtn.addEventListener('click', () => {
@@ -165,7 +189,18 @@ window.addEventListener('load', () => {
     });
 
 
+
+
+    // Восстановление состояния двух прокруток
+    if (localStorage.firstSpin == '6009_first_spin') {
+        spinCount = 1;
+        wheelSpinner.classList.add('wheel__spinner_first_spin');
+        wheelBtn.textContent = 'TOURNER ENCORE';
+    }
+    
+    // Если уже была вторая прокрутка
     if (localStorage.spin == '6009_spin') {
+        spinCount = 2;
         wheelBtn.disabled = true;
         wheelSpinner.classList.remove('wheel__spinner_animated');
         wheelSpinner.classList.add('wheel__spinner_final');

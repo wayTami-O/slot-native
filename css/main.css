@@ -606,7 +606,7 @@ html .no {
 }
 
 .wheel__arrow {
-    background: url("../img/wheel-arrow.png");
+    background: url("../img/wheel-arrow.webp");
     width: 10em;
     height: 8.6em;
     background-size: 100% 100%;
@@ -712,6 +712,19 @@ html .no {
     100% {
         transform: rotate(650deg)
     }
+}
+
+@keyframes spinFirst {
+    0% {
+        transform: rotate(-40deg)
+    }
+    100% {
+        transform: rotate(860deg)
+    }
+}
+
+.wheel__spinner_first_spin {
+    animation: spinFirst 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .payments {
