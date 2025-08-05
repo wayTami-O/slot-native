@@ -703,7 +703,7 @@ html .no {
     0% {
         transform: rotate(-40deg)
     }
-    70% {
+    60% {
         transform: rotate(654deg)
     }
     80% {
@@ -713,6 +713,7 @@ html .no {
         transform: rotate(650deg)
     }
 }
+
 
 
 
