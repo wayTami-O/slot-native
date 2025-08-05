@@ -16,6 +16,8 @@ window.addEventListener('load', () => {
     const priceText = document.getElementById('price-text')
     const surpriceText = document.getElementById('surprice-text')
 
+    const priceMusic = document.getElementById('price-music')
+    const priceRoll = document.getElementById('price-roll')
 
     // Счетчик прокруток колеса
     let spinCount = 0;
@@ -25,6 +27,9 @@ window.addEventListener('load', () => {
         wheelBtn.disabled = true;
         spinCount++;
         
+        priceRoll.currentTime = 0
+        priceRoll.play()
+
         if (spinCount === 1) {
             // Первая прокрутка - 860 градусов
             wheelSpinner.classList.add('wheel__spinner_first_spin');
@@ -40,6 +45,9 @@ window.addEventListener('load', () => {
             
                 popup.classList.add('popup__show');
                 popupWindow1.classList.add('popup__window_show');
+
+                priceMusic.currentTime = 0
+                priceMusic.play()
             }, 4000);
 
             popupBtn.onclick = () => {
@@ -72,6 +80,9 @@ window.addEventListener('load', () => {
                 popup.classList.add('popup__show');
                 popupWindow1.classList.add('popup__window_show');
                 bonusesPage.classList.remove('bonuses__hidden');
+            
+                priceMusic.currentTime = 0
+                priceMusic.play()
             }, 4000);
         }
     })
