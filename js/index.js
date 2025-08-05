@@ -29,7 +29,8 @@ window.addEventListener('load', () => {
             setTimeout(function () {
                 localStorage.firstSpin = '6009_first_spin';
                 wheelBtn.disabled = false;
-                wheelBtn.textContent = 'TOURNER ENCORE';
+                wheelBtn.querySelector('.en').textContent = 'TOURNER ENCORE'
+                // wheelBtn.textContent = 'TOURNER ENCORE';
             }, 4000);
         } else if (spinCount === 2) {
             // Вторая прокрутка - использует CSS keyframe
