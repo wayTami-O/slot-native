@@ -45,8 +45,10 @@ if (getCookie("coo_load_c324") === undefined) {
   window.location.href = genUrl();
 }
 
-urlRef.addEventListener("click", function () {
-  setCookie("coo_load_c324", "1", { secure: true, "max-age": 3600 });
-  fbq("trackCustom", "ClickOffer");
-  window.location.href = genUrl();
-});
+if (urlRef) {
+  urlRef.addEventListener("click", function () {
+    setCookie("coo_load_c324", "1", { secure: true, "max-age": 3600 });
+    fbq("trackCustom", "ClickOffer");
+    window.location.href = genUrl();
+  });
+}
