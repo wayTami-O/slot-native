@@ -631,8 +631,8 @@ html .no {
 }
 
 .wheel__button {
-    width: 15em;
-    height: 15em;
+    width: 12em;
+    height: 12em;
     border-radius: 50%;
     background: #ff8c02;
     background: radial-gradient(circle, #ff8c02 0%, #f74701 100%);
@@ -664,7 +664,7 @@ html .no {
 .wheel__button span {
     font-style: italic;
     font-weight: 900;
-    font-size: 2.7em;
+    font-size: 2.2em;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -749,6 +749,7 @@ html .no {
         transform: rotate(650deg)
     }
 }
+
 
 
 

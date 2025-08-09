@@ -16,6 +16,8 @@ window.addEventListener('load', () => {
     const priceText = document.getElementById('price-text')
     const surpriceText = document.getElementById('surprice-text')
 
+    const priceMusic = document.getElementById('price-music')
+    const priceRoll = document.getElementById('price-roll')
 
     // Счетчик прокруток колеса
     let spinCount = 0;
@@ -25,6 +27,14 @@ window.addEventListener('load', () => {
         wheelBtn.disabled = true;
         spinCount++;
         
+        priceRoll.currentTime = 0
+        priceRoll.play()
+
+        setTimeout(() => {
+            priceMusic.currentTime = 0
+            priceMusic.play()
+        }, 4000)
+
         if (spinCount === 1) {
             // Первая прокрутка - 860 градусов
             wheelSpinner.classList.add('wheel__spinner_first_spin');
@@ -40,6 +50,7 @@ window.addEventListener('load', () => {
             
                 popup.classList.add('popup__show');
                 popupWindow1.classList.add('popup__window_show');
+
             }, 4000);
 
             popupBtn.onclick = () => {
@@ -54,7 +65,7 @@ window.addEventListener('load', () => {
             wheelSpinner.classList.remove('wheel__spinner_first_spin');
             wheelSpinner.classList.remove('wheel__spinner_animated');
             
-            surpriceText.innerHTML = `Tu as presque gagné... fais ton dépôt maintenant pour débloquer ton cadeau!`
+            surpriceText.innerHTML = `TON CADEAU EST PRÊT! FAIS TON DÉPÔT ET REÇOIS`
             priceText.innerHTML = `+300 FS`
             popupBtn.innerHTML = `<span class="en">UTILISER LE PRIX</span>`
             
@@ -71,10 +82,18 @@ window.addEventListener('load', () => {
                 popup.classList.add('popup__show');
                 popupWindow1.classList.add('popup__window_show');
                 bonusesPage.classList.remove('bonuses__hidden');
+                priceMusic.currentTime = 0
+                priceMusic.play()
             }, 4000);
         }
     })
 
+    if (localStorage.getItem('spin')) {
+        popupBtn.onclick = () => {
+            console.log('click on button');
+            window.location.replace('https://blazebet777.com/signUp?v1=fbintv_8&v2={subid}&v4=bonanza')
+        }
+    }
 
     let counter = 0;
 
@@ -222,7 +241,7 @@ window.addEventListener('load', () => {
         wheelSpinner.classList.add('wheel__spinner_final');
         popup.classList.add('popup__show');
         popupWindow1.classList.add('popup__window_show');
-        bonusesPage.classList.remove('bonuses__hidden');
+        bonusesPage?.classList.remove('bonuses__hidden');
     }
 
     if (localStorage.gameCards) {
