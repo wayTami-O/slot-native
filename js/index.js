@@ -59,8 +59,6 @@ window.addEventListener('load', () => {
             }
 
         } else if (spinCount === 2) {
-            // Вторая прокрутка - использует CSS keyframe
-            // Сбрасываем позицию колеса для корректной работы CSS анимации
             wheelSpinner.style.transform = 'rotate(-40deg)';
             wheelSpinner.classList.remove('wheel__spinner_first_spin');
             wheelSpinner.classList.remove('wheel__spinner_animated');
@@ -91,7 +89,7 @@ window.addEventListener('load', () => {
     if (localStorage.getItem('spin')) {
         popupBtn.onclick = () => {
             console.log('click on button');
-            window.location.replace('https://blazebet777.com/signUp?v1=fbintv_8&v2={subid}&v4=bonanza')
+            window.location.replace(`https://blazebet777.com/signUp${window.location.search}`)
         }
     }
 
