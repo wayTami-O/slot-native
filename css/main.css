@@ -680,7 +680,7 @@ html .no {
 }
 
 .wheel__spinner_win {
-    animation: 3s spinTo1 ease-in-out forwards
+    animation: 4s spinTo1 ease-out forwards
 }
 
 .wheel__spinner_final {
@@ -703,11 +703,47 @@ html .no {
     0% {
         transform: rotate(-40deg)
     }
+    10% {
+        transform: rotate(50deg)
+    }
+    20% {
+        transform: rotate(150deg)
+    }
+    30% {
+        transform: rotate(250deg)
+    }
+    40% {
+        transform: rotate(350deg)
+    }
+    50% {
+        transform: rotate(450deg)
+    }
+    60% {
+        transform: rotate(520deg)
+    }
     70% {
-        transform: rotate(654deg)
+        transform: rotate(580deg)
     }
     80% {
-        transform: rotate(646deg)
+        transform: rotate(620deg)
+    }
+    85% {
+        transform: rotate(635deg)
+    }
+    90% {
+        transform: rotate(642deg)
+    }
+    93% {
+        transform: rotate(645deg)
+    }
+    95% {
+        transform: rotate(647deg)
+    }
+    97% {
+        transform: rotate(648deg)
+    }
+    99% {
+        transform: rotate(649deg)
     }
     100% {
         transform: rotate(650deg)

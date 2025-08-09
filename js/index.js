@@ -58,9 +58,9 @@ window.addEventListener('load', () => {
             priceText.innerHTML = `+300 FS`
             popupBtn.innerHTML = `<span class="en">UTILISER LE PRIX</span>`
             
-            popupBtn.onclick = () => {
-                window.location.replace('https://blazebet777.com/signUp?v1=fbintv_8&v2={subid}&v4=bonanza')
-            }
+                         popupBtn.onclick = () => {
+                 window.location.replace(buildRedirectUrl())
+             }
             // Небольшая задержка для применения сброса позиции
             setTimeout(() => {
                 wheelSpinner.classList.add('wheel__spinner_win');
